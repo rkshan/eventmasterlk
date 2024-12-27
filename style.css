@@ -1,0 +1,156 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: #f5f5f7;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    display: flexbox;
+}
+
+/* Navigation Bar */
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 1rem 2rem;
+    border-bottom: 1px solid #e0e0e0;
+    margin: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: #0071e3;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+header ul li a:hover {
+    color: #005bb5;
+}
+
+/* Main Content Area */
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 140px); /* Adjust height to exclude header and footer */
+    text-align: center;
+    margin-top: 70px; /* Space to account for fixed header */
+}
+
+/* Hero Section */
+#home {
+    padding: 20px;
+}
+
+#home h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+#home p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 2rem;
+}
+
+/* Registration Form Section */
+#register {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    margin: 20px auto;
+}
+
+#register h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    color: #333;
+}
+
+#registrationForm {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#registrationForm label {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #555;
+}
+
+#registrationForm input,
+#registrationForm select {
+    padding: 0.9rem;
+    font-size: 1rem;
+    border: 1px solid #d1d1d6;
+    border-radius: 8px;
+    background-color: #f5f5f7;
+    transition: border-color 0.3s ease;
+}
+
+#registrationForm input:focus,
+#registrationForm select:focus {
+    border-color: #0071e3;
+    outline: none;
+    background-color: #ffffff;
+}
+
+#registrationForm button {
+    background-color: #0071e3;
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 0.9rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#registrationForm button:hover {
+    background-color: #005bb5;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 0.9rem;
+    color: #888;
+    margin-top: auto;
+}
